@@ -295,8 +295,25 @@ body {
     font-size: 0.8rem;
 }
 
-/* Pain to Promise Section */
-.pain-promise {
+/* Mini-About Section */
+.mini-about {
+    padding: var(--spacing-xl) 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.about-text {
+    font-size: 1.25rem;
+    color: var(--medium-gray);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* Benefits Section */
+.benefits {
     padding: var(--spacing-2xl) 0;
     background: #f9f9f9;
 }
@@ -308,150 +325,179 @@ body {
     text-align: center;
     margin-bottom: var(--spacing-xl);
     color: var(--black);
+    line-height: 1.2;
 }
 
-.pain-promise-grid {
+.benefits-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-xl);
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.pain-side, .promise-side {
-    background: var(--white);
-    padding: var(--spacing-xl);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-sm);
-}
-
-.pain-side h3, .promise-side h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: var(--spacing-md);
-    color: var(--black);
-}
-
-.pain-side ul, .promise-side ul {
-    list-style: none;
-}
-
-.pain-side li, .promise-side li {
-    padding: var(--spacing-xs) 0;
-    position: relative;
-    padding-left: var(--spacing-md);
-}
-
-.pain-side li::before {
-    content: "×";
-    position: absolute;
-    left: 0;
-    color: #ef4444;
-    font-weight: bold;
-}
-
-.promise-side li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: var(--green);
-    font-weight: bold;
-}
-
-/* Services Section */
-.services {
-    padding: var(--spacing-2xl) 0;
-    background: var(--white);
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-xl);
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.service-panel {
-    background: var(--white);
-    border: 2px solid var(--light-gray);
-    padding: var(--spacing-xl);
-    border-radius: var(--radius);
-    transition: all 0.3s ease-out;
-}
-
-.service-panel:hover {
-    border-color: var(--dark-gray);
-    box-shadow: var(--shadow-md);
-}
-
-.service-panel h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: var(--spacing-md);
-    color: var(--black);
-}
-
-.service-panel ul {
-    list-style: none;
-}
-
-.service-panel li {
-    padding: var(--spacing-xs) 0;
-    position: relative;
-    padding-left: var(--spacing-md);
-}
-
-.service-panel li::before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: var(--dark-gray);
-}
-
-/* Process Section */
-.process {
-    padding: var(--spacing-2xl) 0;
-    background: #f9f9f9;
-}
-
-.process-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-lg);
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.process-step {
+.benefit-card {
     background: var(--white);
     padding: var(--spacing-xl);
     border-radius: var(--radius);
-    text-align: center;
     box-shadow: var(--shadow-sm);
+    text-align: center;
     transition: all 0.3s ease-out;
 }
 
-.process-step:hover {
+.benefit-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
 }
 
-.step-icon {
-    font-size: 2rem;
-    margin-bottom: var(--spacing-md);
-}
-
-.process-step h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
+.benefit-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
     margin-bottom: var(--spacing-sm);
     color: var(--black);
 }
 
-.process-step p {
+.benefit-card p {
     color: var(--medium-gray);
     line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Methodology Section */
+.methodology {
+    padding: var(--spacing-2xl) 0;
+    background: var(--white);
+}
+
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.method-step {
+    text-align: center;
+    padding: var(--spacing-lg);
+}
+
+.step-number {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: var(--black);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 auto var(--spacing-md) auto;
+}
+
+.method-step h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    color: var(--black);
+}
+
+.method-step p {
+    color: var(--medium-gray);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Proof Section */
+.proof {
+    padding: var(--spacing-2xl) 0;
+    background: var(--black);
+    color: var(--white);
+}
+
+.proof-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.proof-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #cccccc;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.proof-testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--spacing-xl);
+    border-left: 4px solid var(--white);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius);
+}
+
+.proof-testimonial blockquote {
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.proof-testimonial cite {
+    font-size: 1rem;
+    color: #cccccc;
+    font-style: normal;
+}
+
+/* Final CTA Section */
+.final-cta {
+    padding: var(--spacing-2xl) 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.2;
+}
+
+.cta-content p {
+    font-size: 1.25rem;
+    color: var(--medium-gray);
+    margin-bottom: var(--spacing-xl);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button.large {
+    font-size: 1.25rem;
+    padding: var(--spacing-lg) var(--spacing-2xl);
 }
 
 /* Modal Styles */
@@ -583,14 +629,19 @@ body {
         max-width: 100%;
     }
     
-    .pain-promise-grid,
-    .services-grid {
+    .benefits-grid,
+    .method-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
     }
     
-    .process-grid {
+    .proof-stats {
         grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
     }
     
     .section-title {

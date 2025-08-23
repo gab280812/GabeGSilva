@@ -1,38 +1,38 @@
 // Problem statements for typewriter animation
 const problems = [
-    "Ecommerce Stuck at $2, 8 or 12 Million",
-    "AI has tanked my SEO",
-    "Can't scale advertising",
-    "B2B launching DTC for the first time",
-    "Founder Burnout",
-    "My team needs training",
-    "Making my ecommerce profitable",
-    "Building stores that scale without hinderance",
-    "I don't know my market",
-    "How do I implement AI to improve my ecommerce"
+    "Why is my product not ranking on Google?",
+    "How do I handle out‑of‑stock pages without losing traffic?",
+    "Is my website loading too slow for Google?",
+    "Why is my site getting duplicate‑content penalties?",
+    "Getting clicks but no sales—what's going wrong?",
+    "Why don't visitors trust my store yet?",
+    "How do I get people to keep buying from me?",
+    "Inventory feels impossible—is there a fix?",
+    "Why is my ad budget evaporating without results?",
+    "Lack of conversions despite decent traffic—help?"
 ];
 
 // Corresponding client reviews for each problem
 const reviews = [
     {
         stars: 5,
-        text: "Helped us break through the $8M plateau with strategic channel diversification. Revenue jumped 65% in 8 months.",
+        text: "Fixed our SEO strategy and product pages. Now ranking #1 for our main keywords and organic traffic is up 340%.",
         name: "Sarah Chen",
         title: "CEO, ModernHome",
         avatar: "SC",
         color: "#3b82f6"
     },
     {
-        stars: 4,
-        text: "Recovered our organic traffic after AI updates destroyed our rankings. Back to 150% of previous levels.",
+        stars: 5,
+        text: "Smart out-of-stock page strategy kept our SEO juice flowing. Traffic stayed steady even during supply issues.",
         name: "Marcus Rodriguez",
         title: "Marketing Director, TechGear",
         avatar: "MR",
         color: "#10b981"
     },
     {
-        stars: 5,
-        text: "Transformed our ad strategy from bleeding money to 4.2x ROAS. Finally profitable at scale.",
+        stars: 4,
+        text: "Site speed optimization was a game-changer. Load times dropped 60% and Google rankings shot up immediately.",
         name: "Jennifer Walsh",
         title: "Founder, EcoLiving",
         avatar: "JW",
@@ -40,23 +40,23 @@ const reviews = [
     },
     {
         stars: 5,
-        text: "Seamless DTC launch strategy. Went from B2B-only to $2M DTC revenue in our first year.",
+        text: "Cleaned up our duplicate content mess. Penalties lifted and organic visibility returned within 6 weeks.",
         name: "David Kim",
         title: "VP Strategy, InnovateTech",
         avatar: "DK",
         color: "#8b5cf6"
     },
     {
-        stars: 4,
-        text: "Built systems that let me step back from daily operations. Finally have my life back while revenue grows.",
+        stars: 5,
+        text: "Conversion optimization turned our traffic into actual sales. Same visitors, 3x more revenue.",
         name: "Lisa Thompson",
         title: "Founder, StyleCraft",
         avatar: "LT",
         color: "#ef4444"
     },
     {
-        stars: 5,
-        text: "Team training program was game-changing. Our conversion rates improved 40% across all channels.",
+        stars: 4,
+        text: "Trust signals and social proof overhaul transformed our store. Conversion rate jumped from 1.2% to 4.8%.",
         name: "Michael Chang",
         title: "COO, SportsPro",
         avatar: "MC",
@@ -64,31 +64,31 @@ const reviews = [
     },
     {
         stars: 5,
-        text: "Turned our struggling store profitable in 90 days. Clear roadmap and flawless execution.",
+        text: "Email automation and loyalty program built our repeat customer base. 60% of revenue now comes from returning customers.",
         name: "Amanda Foster",
         title: "CEO, BeautyBox",
         avatar: "AF",
         color: "#84cc16"
     },
     {
-        stars: 4,
-        text: "Infrastructure overhaul eliminated our scaling bottlenecks. Now handling 10x the volume seamlessly.",
+        stars: 5,
+        text: "Inventory management system eliminated stockouts and overstock. Cash flow improved 40% in first quarter.",
         name: "Robert Martinez",
         title: "CTO, GrowthCorp",
         avatar: "RM",
         color: "#f97316"
     },
     {
-        stars: 5,
-        text: "Market research insights were spot-on. Pivoted our positioning and saw immediate traction.",
+        stars: 4,
+        text: "Ad account restructure and targeting fix brought ROAS from 0.8x to 4.2x. Finally profitable advertising.",
         name: "Emily Watson",
         title: "Marketing Lead, FreshStart",
         avatar: "EW",
         color: "#ec4899"
     },
     {
-        stars: 4,
-        text: "AI implementation boosted our personalization engine. Customer lifetime value up 85%.",
+        stars: 5,
+        text: "Conversion rate optimization across the funnel. Traffic stayed the same but revenue doubled in 90 days.",
         name: "James Liu",
         title: "Data Director, SmartCommerce",
         avatar: "JL",
