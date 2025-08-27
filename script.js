@@ -1,15 +1,15 @@
-// Problem statements for typewriter animation
+// Problem statements for typewriter animation - updated with action-oriented language
 const problems = [
-    "Why is my product not ranking on Google?",
-    "How do I handle out‑of‑stock pages without losing traffic?",
-    "Is my website loading too slow for Google?",
-    "Why is my site getting duplicate‑content penalties?",
+    "Today's funnel leaky?",
+    "Stop revenue slipping through checkout cracks",
+    "Conflicting channels?", 
+    "Bridge B2B & D2C without burning partners",
     "Getting clicks but no sales—what's going wrong?",
     "Why don't visitors trust my store yet?",
     "How do I get people to keep buying from me?",
-    "Inventory feels impossible—is there a fix?",
+    "Inventory chaos throttling growth?",
     "Why is my ad budget evaporating without results?",
-    "Lack of conversions despite decent traffic—help?"
+    "Traffic but flat revenue—sound familiar?"
 ];
 
 // Corresponding client reviews for each problem
@@ -306,8 +306,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Dynamic Hero Functionality
+function initializeDynamicHero() {
+    const navButtons = document.querySelectorAll('.nav-btn');
+    const heroVariants = document.querySelectorAll('.hero-variant');
+    
+    navButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetAudience = this.dataset.audience;
+            
+            // Update button states
+            navButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Update hero variants
+            heroVariants.forEach(variant => {
+                variant.classList.remove('active');
+                if (variant.dataset.audience === targetAudience) {
+                    setTimeout(() => {
+                        variant.classList.add('active');
+                    }, 150);
+                }
+            });
+        });
+    });
+}
+
 // Initialize typewriter animation when page loads
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize dynamic hero
+    initializeDynamicHero();
+    
     // Start typewriter animation after a brief delay
     setTimeout(() => {
         isTyping = true;

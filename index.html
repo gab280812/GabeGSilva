@@ -3,20 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DTC Consulting - Turn Your Commerce Vision Into Profitable Reality</title>
-    <meta name="description" content="Strategic DTC consulting for ambitious ecommerce founders and B2B companies ready to dominate direct-to-consumer markets. No fluff, just results.">
+    <title>DTC Consulting - Breaking Through $2–$15M: Precision Strategies That Ignite Sustainable Growth</title>
+    <meta name="description" content="Revenue forensics and human-centric UX for ecommerce founders stuck at $2-15M. Plus D2C mastery for B2B brands ready to own their margin, data, and customers.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">DTC Consulting</span>
+                </div>
+                <nav class="main-nav">
+                    <button class="nav-btn active" data-audience="founders">Ecommerce Founders</button>
+                    <button class="nav-btn" data-audience="b2b">B2B → D2C</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <!-- Hero Section with Two Columns -->
     <section class="hero">
         <div class="container">
+            
             <div class="hero-grid">
                 <!-- Left Column: Hero Content -->
                 <div class="hero-content">
-                    <h1 class="hero-title">Scale to $10M+ by Fixing What's Actually Broken with Battle-Tested DTC Systems</h1>
-                    <p class="hero-subtitle">Most ecommerce founders are one strategic pivot away from explosive growth. I help you find it, fix it, and scale it—fast.</p>
+                    <div class="dynamic-hero" id="dynamicHero">
+                        <div class="hero-variant active" data-audience="founders">
+                            <h1 class="hero-title">Breaking Through $2–$15M: Precision Strategies That Ignite Sustainable Growth</h1>
+                            <p class="hero-subtitle">Your roadmap from flatlining funnels to meaningful scale</p>
+                            <div class="pain-point">
+                                <p class="pain-text">"Flat revenue, despite traffic. Hidden funnel friction. Retention feels like a drip."</p>
+                                <p class="solution-text">Revenue forensics, human-centric UX, retention recharges, and team workflows that make growth repeatable.</p>
+                            </div>
+                        </div>
+                        <div class="hero-variant" data-audience="b2b">
+                            <h1 class="hero-title">From Distribution to Direct: B2B Brands, Meet D2C Mastery</h1>
+                            <p class="hero-subtitle">Own your margin, your data, and your customers</p>
+                            <div class="pain-point">
+                                <p class="pain-text">"Retail partners squint at your new D2C site. Conversion is low. Fulfillment feels clunky."</p>
+                                <p class="solution-text">Partner-friendly D2C models, responsive UX, logistics scaled for volume, emotional brand messaging, and modern stacks that flex.</p>
+                            </div>
+                        </div>
+                    </div>
                     <button class="cta-button" onclick="openBookingModal()">
                         Start Scaling
                         <span class="arrow">→</span>
@@ -62,26 +94,40 @@
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="benefits">
+    <!-- Who We Serve Section -->
+    <section class="who-we-serve">
         <div class="container">
-            <h2 class="section-title">What You Actually Get</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <h3>More Revenue</h3>
-                    <p>Break through revenue plateaus with systems that actually work. No more guessing—just growth.</p>
+            <h2 class="section-title">Who We Serve</h2>
+            <div class="avatar-grid">
+                <div class="avatar-card">
+                    <div class="avatar-icon">📈</div>
+                    <h3>D2C Growth‑hungry Founders (&lt;$15M)</h3>
+                    <p class="avatar-description">Stuck between $2-15M with traffic but flat revenue? We specialize in:</p>
+                    <ul class="avatar-services">
+                        <li><strong>Funnel optimization</strong> — Stop revenue slipping through checkout cracks</li>
+                        <li><strong>Retention playbooks</strong> — Turn one-time buyers into loyal customers</li>
+                        <li><strong>AOV & LTV growth</strong> — Maximize every customer relationship</li>
+                        <li><strong>Talent systems</strong> — Build teams that scale with you</li>
+                        <li><strong>Process design</strong> — Repeatable growth without burnout</li>
+                    </ul>
+                    <div class="case-study">
+                        <p class="case-text">"We recovered $1M+ annual for an e‑com brand by diagnosing funnel misalignment and optimizing checkout."</p>
+                    </div>
                 </div>
-                <div class="benefit-card">
-                    <h3>Less Burnout</h3>
-                    <p>Build a business that runs without you micromanaging every detail. Get your life back.</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>Faster Decisions</h3>
-                    <p>Stop second-guessing every move. Get clear frameworks that make scaling feel inevitable.</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>Real Profit</h3>
-                    <p>Turn vanity metrics into actual money in the bank. Sustainable margins that compound.</p>
+                <div class="avatar-card">
+                    <div class="avatar-icon">🔄</div>
+                    <h3>Ambitious B2B Brands Expanding to D2C</h3>
+                    <p class="avatar-description">Ready to own your customer relationship? We bridge the gap with:</p>
+                    <ul class="avatar-services">
+                        <li><strong>Hybrid strategy</strong> — Bridge B2B & D2C without burning partners</li>
+                        <li><strong>Channel coexistence</strong> — Harmonious multi-channel growth</li>
+                        <li><strong>Tech stack overhaul</strong> — Modern systems that flex and scale</li>
+                        <li><strong>D2C storytelling</strong> — Emotional brand messaging that converts</li>
+                        <li><strong>Fulfillment mastery</strong> — Logistics scaled for volume</li>
+                    </ul>
+                    <div class="case-study">
+                        <p class="case-text">"A manufacturer launched direct‑to‑consumer line, reduced dependency on retail margins, and gained real customer insight."</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,23 +140,27 @@
             <div class="method-grid">
                 <div class="method-step">
                     <div class="step-number">01</div>
-                    <h3>Find the Real Problem</h3>
-                    <p>Most "scaling issues" aren't what they seem. We dig until we find what's actually holding you back.</p>
+                    <div class="step-icon">🔍</div>
+                    <h3>Audit & Forensics</h3>
+                    <p>We trace your funnel leaks—from ad to AOV. We log team and tech inefficiencies that are throttling scale.</p>
                 </div>
                 <div class="method-step">
                     <div class="step-number">02</div>
-                    <h3>Build the Fix</h3>
-                    <p>No cookie-cutter solutions. We create systems that fit your business, your team, your reality.</p>
+                    <div class="step-icon">📋</div>
+                    <h3>Blueprint Strategy</h3>
+                    <p>High-impact, phased plans: fix messaging, upgrade checkout, tailor D2C UX, implement loyalty loops or hybrid channel strategies.</p>
                 </div>
                 <div class="method-step">
                     <div class="step-number">03</div>
-                    <h3>Make It Stick</h3>
-                    <p>Implementation that actually works. Your team gets trained, systems get embedded, growth gets sustainable.</p>
+                    <div class="step-icon">🤝</div>
+                    <h3>Collaborative Execution</h3>
+                    <p>Lean into your team—cross-train, align owners, keep partners informed, upskill your org while we roll out.</p>
                 </div>
                 <div class="method-step">
                     <div class="step-number">04</div>
-                    <h3>Scale Smart</h3>
-                    <p>Monitor, optimize, repeat. We don't disappear after launch—we make sure your growth compounds.</p>
+                    <div class="step-icon">📊</div>
+                    <h3>Adaptive Optimization</h3>
+                    <p>Close the feedback loop—convert data to insights to tweaks that compound. Funnel + fulfillment + brand = growing power.</p>
                 </div>
             </div>
         </div>
